@@ -4,15 +4,19 @@ def somar(a,b):
 def subtrair(a, b):
     return a - b
 
+def multiplicar(a, b):
+    return a * b
+
 def menu():
     while True:
         print("\nEscolha uma opção:")
         print("1. Somar")
         print("2. Subtrair")
+        print("3. Multiplicar")
 
         opcao = input("Digite a opção desejada: ")
 
-        if opcao in ['1', '2']:
+        if opcao in ['1', '2', '3']:
             try:
                 a = float(input("Digite o primeiro número: "))
                 b = float(input("Digite o segundo número: "))
@@ -24,3 +28,5 @@ def menu():
                 print(f"O resultado da soma é: {somar(a, b)}")
             elif opcao == '2':
                 print(f"O resultado da subtração é: {subtrair(a, b)}")
+            elif opcao == '3':
+                print(f"O resultado da multiplicação é: {multiplicar(a, b)}")
