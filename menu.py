@@ -46,3 +46,6 @@ def menu():
                 print(f"O resultado da divisão é: {dividir(a, b)}")
         else:
             print("Opção inválida! Tente novamente.")
+  
+# Chamando a função menu para iniciar o programa
+menu()
